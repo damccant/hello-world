@@ -1,5 +1,5 @@
 /*****
- * Edit this line to have your name.
+ * Edit this line to have your name. -- Derek McCants
  ******/
 public class GitDemo {
     
@@ -14,7 +14,7 @@ public class GitDemo {
     *****/
     public double addNumber(double num) {
         System.out.print("Add num to previousNumber");
-        return 0;
+        return (previousNumber += num);
     }
     
     /*****
@@ -34,6 +34,7 @@ public class GitDemo {
         return factorialNumber;
     }
     
+    private double reverseNum;
     /*****
      * This function should reverse 'num' and return the resulting value.
      * i.e. if num = 1234
@@ -45,7 +46,7 @@ public class GitDemo {
         for(int i = 1; i <= num; ++i){
             newNumber = newNumber * i;
         }
-        
+        reverseNum = newNumber;
         return newNumber;
     }
     
